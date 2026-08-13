@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Your Financial Hub LLC.">
+    <title>Privacy Policy | Your Financial Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a2e5a;
+            --navy-deep: #08124c;
+            --gold: #c9a84c;
+            --gold-light: #e0c36d;
+            --cream: #fff8e1;
+            --ink: #1e293b;
+            --muted: #5b6472;
+            --white: #ffffff;
+            --line: #e7dfcc;
+            --shadow: 0 18px 45px rgba(8, 18, 76, 0.12);
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: var(--ink);
+            background: #fcfaf4;
+            line-height: 1.7;
+        }
+        a { color: var(--navy); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+        a:hover { color: var(--gold); }
+        .skip-link {
+            position: absolute;
+            left: 1rem;
+            top: -4rem;
+            z-index: 10;
+            padding: .7rem 1rem;
+            border-radius: .5rem;
+            background: var(--gold);
+            color: var(--navy);
+            font-weight: 700;
+        }
+        .skip-link:focus { top: 1rem; }
+        .site-header {
+            background: linear-gradient(120deg, var(--navy), var(--navy-deep));
+            border-bottom: 3px solid var(--gold);
+        }
+        .header-inner {
+            width: min(1160px, calc(100% - 2rem));
+            min-height: 86px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.25rem;
+        }
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+            color: var(--white);
+            text-decoration: none;
+            font-family: 'Libre Baskerville', serif;
+            font-size: 1.08rem;
+        }
+        .brand img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: .5rem;
+            background: var(--white);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: .45rem;
+            color: var(--cream);
+            text-decoration: none;
+            font-size: .92rem;
+            font-weight: 600;
+        }
+        .back-link svg { width: 17px; height: 17px; }
+        .hero {
+            background: linear-gradient(180deg, var(--cream), #fcfaf4);
+            padding: 4.75rem 1rem 3rem;
+            text-align: center;
+        }
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: .8rem;
+            padding: .35rem .8rem;
+            border: 1px solid rgba(201,168,76,.5);
+            border-radius: 999px;
+            color: var(--navy);
+            background: rgba(255,255,255,.68);
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+        h1, h2, h3 { font-family: 'Libre Baskerville', serif; }
+        h1 {
+            max-width: 780px;
+            margin: 0 auto .9rem;
+            color: var(--navy);
+            font-size: clamp(2rem, 5vw, 3.35rem);
+            line-height: 1.2;
+        }
+        .hero p { max-width: 680px; margin: 0 auto; color: var(--muted); }
+        .policy-shell {
+            width: min(980px, calc(100% - 2rem));
+            margin: -1rem auto 4.5rem;
+            padding: clamp(1.5rem, 4vw, 3.25rem);
+            border: 1px solid var(--line);
+            border-radius: 1.25rem;
+            background: var(--white);
+            box-shadow: var(--shadow);
+        }
+        .policy-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .75rem 1.5rem;
+            margin: 0 0 2rem;
+            padding: 1rem 1.15rem;
+            border-left: 4px solid var(--gold);
+            background: var(--cream);
+            color: #4e5560;
+            font-size: .9rem;
+        }
+        .policy-meta strong { color: var(--navy); }
+        .notice {
+            margin: 0 0 2rem;
+            padding: 1rem 1.15rem;
+            border: 1px solid #e8c968;
+            border-radius: .8rem;
+            background: #fffaf0;
+            color: #5e4a15;
+            font-size: .93rem;
+        }
+        h2 {
+            margin: 2.6rem 0 .8rem;
+            padding-bottom: .65rem;
+            border-bottom: 1px solid var(--line);
+            color: var(--navy);
+            font-size: clamp(1.3rem, 3vw, 1.7rem);
+            line-height: 1.35;
+        }
+        h3 { color: var(--navy); font-size: 1.04rem; margin: 1.5rem 0 .5rem; }
+        p { margin: .8rem 0; }
+        ul { margin: .75rem 0 1rem 1.25rem; padding: 0; }
+        li { margin: .38rem 0; }
+        .provider-table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; overflow: hidden; border: 1px solid var(--line); border-radius: .75rem; }
+        .provider-table th, .provider-table td { padding: .85rem 1rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+        .provider-table th { background: var(--navy); color: var(--cream); font-size: .9rem; }
+        .provider-table tr:last-child td { border-bottom: 0; }
+        .contact-card { margin-top: 1.3rem; padding: 1.35rem; border-radius: .8rem; background: var(--navy); color: var(--cream); }
+        .contact-card h3 { color: var(--gold-light); margin-top: 0; }
+        .contact-card a { color: var(--cream); }
+        .site-footer { background: var(--navy-deep); color: rgba(255,255,255,.8); padding: 2rem 1rem; text-align: center; font-size: .9rem; }
+        .site-footer p { margin: 0; }
+        .site-footer a { color: var(--gold-light); }
+        @media (max-width: 600px) {
+            .header-inner { min-height: 74px; }
+            .brand span { display: none; }
+            .hero { padding-top: 3.5rem; }
+            .provider-table { display: block; overflow-x: auto; }
+            .policy-shell { margin-bottom: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#policy-content">Skip to Privacy Policy</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Your Financial Hub home">
+                <img src="images/logo.png" alt="Your Financial Hub logo">
+                <span>Your Financial Hub</span>
+            </a>
+            <a class="back-link" href="index.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/><path d="M9 12h12"/></svg>
+                Back to Website
+            </a>
+        </div>
+    </header>
+
+    <main id="policy-content">
+        <section class="hero" aria-labelledby="page-title">
+            <span class="eyebrow">Your Financial Hub LLC</span>
+            <h1 id="page-title">Privacy Policy</h1>
+            <p>How Your Financial Hub collects, uses, shares, and protects personal information when you visit our website, contact us, or participate in our programs.</p>
+        </section>
+
+        <article class="policy-shell">
+            <div class="policy-meta">
+                <span><strong>Effective date:</strong> August 12, 2026</span>
+                <span><strong>Last updated:</strong> August 12, 2026</span>
+            </div>
+
+            <aside class="notice">
+                <strong>Review notice:</strong> This policy is being added for review. Your Financial Hub should confirm that the statements below accurately reflect its current data practices before publishing.
+            </aside>
+
+            <p>Your Financial Hub LLC ("Your Financial Hub," "YFH," "we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, disclose, retain, and protect personal information when you visit <a href="https://www.yfhllc.com">www.yfhllc.com</a>, contact us, book a service or workshop, or join the #IInvest Movement.</p>
+
+            <h2>1. Information We Collect</h2>
+            <p>We collect information you choose to provide to us, including your name, email address, phone number, city or state, preferred contact method, service or workshop interests, financial-education goals, event availability, messages, and other information you submit through our forms.</p>
+            <p>We may collect this information when you:</p>
+            <ul>
+                <li>Submit a message through the website contact form;</li>
+                <li>Book a consultation, speaking engagement, Personal Money Workshop, or group workshop;</li>
+                <li>Join the #IInvest Movement;</li>
+                <li>Communicate with us by email, phone, or social-media channels; or</li>
+                <li>Register for or attend a YFH event, class, workshop, or program.</li>
+            </ul>
+            <p>We may also receive limited technical information automatically when you visit the Website, such as your device type, browser, IP address, pages viewed, and general usage information. Third-party services that power forms, scheduling, hosting, or embedded content may collect information under their own privacy notices.</p>
+
+            <h3>Please do not send sensitive financial information through public forms</h3>
+            <p>Do not submit Social Security numbers, bank-account or payment-card numbers, tax returns, account credentials, government identification numbers, or other highly sensitive information through the contact form or #IInvest signup form. If we need sensitive information to provide a service, we will tell you how to provide it through an appropriate secure channel.</p>
+
+            <h2>2. How We Use Information</h2>
+            <p>We may use personal information to:</p>
+            <ul>
+                <li>Respond to your questions, requests, and service inquiries;</li>
+                <li>Schedule consultations, workshops, speaking engagements, and other services;</li>
+                <li>Deliver financial-education programs, event information, and requested resources;</li>
+                <li>Personalize communications based on the interests you share with us;</li>
+                <li>Send updates, educational materials, or event announcements when you opt in;</li>
+                <li>Maintain records, improve our Website and services, and protect against fraud, misuse, or security incidents; and</li>
+                <li>Comply with applicable law and enforce our agreements.</li>
+            </ul>
+
+            <h2>3. Marketing Communications and Your Choices</h2>
+            <p>If you choose to receive updates or educational materials from Your Financial Hub, we may send you email communications about workshops, events, programs, resources, and related services. You may unsubscribe from marketing emails at any time by using the unsubscribe link in the message or by emailing <a href="mailto:info@yfhllc.com">info@yfhllc.com</a>.</p>
+            <p>Providing a phone number or selecting a preferred contact method does not require you to receive marketing text messages. We will use phone, SMS, or WhatsApp communications only as permitted by law and consistent with the permission you provide.</p>
+
+            <h2>4. How We Share Information</h2>
+            <p>We may share information with service providers that help us operate our Website and deliver requested services.</p>
+            <table class="provider-table">
+                <thead><tr><th>Service provider</th><th>Purpose</th></tr></thead>
+                <tbody>
+                    <tr><td>Zoho Forms</td><td>Website contact-form submissions</td></tr>
+                    <tr><td>Jotform</td><td>#IInvest Movement signup and registration information</td></tr>
+                    <tr><td>TidyCal</td><td>Appointment and workshop scheduling</td></tr>
+                    <tr><td>GitHub Pages and related hosting providers</td><td>Website hosting and delivery</td></tr>
+                </tbody>
+            </table>
+            <p>We may also disclose information when reasonably necessary to comply with law, respond to a lawful request, protect the rights, safety, or property of Your Financial Hub or others, or in connection with a business transition such as a merger, acquisition, or sale of assets.</p>
+            <p><strong>Our current practice:</strong> Your Financial Hub does not sell personal information or share personal information for cross-context behavioral advertising.</p>
+
+            <h2>5. Cookies and Similar Technologies</h2>
+            <p>Our Website and the third-party services linked to or embedded in it may use cookies, pixels, local storage, or similar technologies to operate the service, remember preferences, understand usage, and improve user experience. You can generally control cookies through your browser settings. Blocking cookies may affect the operation of some features or third-party forms.</p>
+
+            <h2>6. Data Retention and Security</h2>
+            <p>We retain personal information for as long as reasonably necessary for the purposes described in this Policy, including responding to requests, providing services, maintaining business records, resolving disputes, and meeting legal obligations.</p>
+            <p>We use reasonable administrative, technical, and organizational safeguards designed to protect personal information. No online system is completely secure, however, and we cannot guarantee absolute security.</p>
+
+            <h2>7. Your Privacy Choices and Requests</h2>
+            <p>You may request access to, correction of, or deletion of the personal information we hold about you, subject to applicable law and legitimate recordkeeping needs. You may also ask questions about how we use your information or opt out of marketing communications.</p>
+            <p>To make a request, email <a href="mailto:info@yfhllc.com?subject=Privacy%20Request">info@yfhllc.com</a> with the subject line <strong>“Privacy Request.”</strong> Please include your name, the email address you used with us, and the request you would like us to address. We may take reasonable steps to verify your identity before acting on a request.</p>
+            <p>Maryland residents may have additional rights under applicable law. Where those rights apply, they may include rights to know, access, correct, delete, limit certain uses of personal information, and opt out of certain sales or sharing of personal information. If we deny a rights request, you may ask us to review that decision by replying to our response with the subject line <strong>“Privacy Request Appeal.”</strong></p>
+
+            <h2>8. Children’s Privacy</h2>
+            <p>Our Website is not designed to knowingly collect personal information from children under 13 without appropriate parental or guardian permission. If you believe a child has provided personal information through the Website without appropriate permission, please contact us at <a href="mailto:info@yfhllc.com">info@yfhllc.com</a> so that we can review and address the matter.</p>
+            <p>Youth programming may use separate registration and permission procedures when appropriate.</p>
+
+            <h2>9. Third-Party Links and Services</h2>
+            <p>The Website may link to or use third-party websites and services, including Jotform, Zoho Forms, TidyCal, social-media platforms, and future payment or merchandise providers. These services operate under their own privacy policies and practices. We encourage you to review those policies before submitting information through a third-party service.</p>
+
+            <h2>10. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. When we do, we will post the revised version on this page and update the “Last updated” date above. Your continued use of the Website after a revised policy is posted is subject to the revised policy, to the extent permitted by law.</p>
+
+            <h2>11. Contact Us</h2>
+            <div class="contact-card">
+                <h3>Your Financial Hub LLC</h3>
+                <p>Baltimore, Maryland 21218<br>
+                    Email: <a href="mailto:info@yfhllc.com">info@yfhllc.com</a><br>
+                    Phone: <a href="tel:+14433539366">(443) 353-9366</a>
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Your Financial Hub LLC &nbsp;•&nbsp; <a href="index.html">Home</a> &nbsp;•&nbsp; <a href="privacy-policy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
