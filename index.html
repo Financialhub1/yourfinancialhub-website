@@ -644,6 +644,121 @@
             gap: var(--space-sm);
         }
 
+        .service-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-top: var(--space-md);
+        }
+
+        .service-links .service-link {
+            margin-top: 0;
+        }
+
+        .personal-workshops-card {
+            border-color: rgba(139, 195, 74, 0.55);
+            background: linear-gradient(145deg, rgba(139, 195, 74, 0.14), rgba(255, 255, 255, 0.05));
+        }
+
+        .personal-workshops-card::before {
+            background: #8BC34A;
+        }
+
+        .personal-workshops-card:hover {
+            border-color: #8BC34A;
+        }
+
+        .personal-workshops-icon {
+            background: #8BC34A;
+            color: var(--color-background-dark);
+        }
+
+        .personal-workshops-card .service-price {
+            color: #c8eea5;
+        }
+
+        .personal-workshops-card .promo-badge {
+            background: rgba(139, 195, 74, 0.18);
+            color: #d9f7bf;
+        }
+
+        .personal-workshops-panel {
+            scroll-margin-top: 100px;
+            max-width: 1200px;
+            margin: 0 auto var(--space-2xl);
+            padding: clamp(1.5rem, 4vw, 3rem);
+            border: 1px solid rgba(139, 195, 74, 0.7);
+            border-radius: var(--radius-lg);
+            background: linear-gradient(135deg, rgba(139, 195, 74, 0.18), rgba(255, 248, 225, 0.08));
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+            text-align: center;
+        }
+
+        .personal-workshops-eyebrow {
+            display: inline-block;
+            margin-bottom: var(--space-sm);
+            color: #d9f7bf;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .personal-workshops-panel h3 {
+            color: var(--color-text-light);
+            font-size: clamp(1.6rem, 3vw, 2.25rem);
+            margin-bottom: var(--space-xs);
+        }
+
+        .personal-workshops-panel .personal-workshops-tagline {
+            color: var(--color-secondary);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+        }
+
+        .personal-workshops-panel p {
+            max-width: 760px;
+            margin: 0 auto var(--space-md);
+            color: rgba(253, 246, 236, 0.9);
+        }
+
+        .personal-workshops-price {
+            color: #d9f7bf !important;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .personal-workshops-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-top: var(--space-lg);
+        }
+
+        .btn-money-green {
+            background: #8BC34A;
+            color: var(--color-background-dark);
+        }
+
+        .btn-money-green:hover {
+            background: #a4d86d;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(139, 195, 74, 0.35);
+        }
+
+        .btn-cream-outline {
+            color: var(--color-text-light);
+            border: 2px solid var(--color-text-light);
+            background: transparent;
+        }
+
+        .btn-cream-outline:hover {
+            color: var(--color-background-dark);
+            background: var(--color-text-light);
+        }
+
         /* Mission & Vision Section */
         .mission-vision {
             background: linear-gradient(135deg, var(--color-accent) 0%, #4a5c1a 100%);
@@ -927,6 +1042,17 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.15);
             margin: var(--space-lg) auto;
             display: block;
+        }
+
+        .iinvest-actions {
+            display: flex;
+            justify-content: center;
+            margin: var(--space-xl) 0 var(--space-lg);
+        }
+
+        .iinvest-actions .btn {
+            min-width: 260px;
+            justify-content: center;
         }
 
         .iinvest-pillars {
@@ -1310,7 +1436,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             .nav-links {
                 display: none;
                 position: absolute;
@@ -1332,9 +1458,15 @@
                 display: flex;
             }
 
-            .hero-buttons {
+            .hero-buttons,
+            .personal-workshops-actions {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .personal-workshops-actions .btn {
+                width: 100%;
+                justify-content: center;
             }
 
             .about-features {
@@ -1384,6 +1516,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#personal-workshops">Personal Workshops</a></li>
             <li><a href="#workshops">Workshops</a></li>
             <li><a href="#speaking">Speaking</a></li>
             <li><a href="#iinvest">#IInvest</a></li>
@@ -1461,9 +1594,9 @@
         <section class="services" id="services">
             <div class="section-header">
                 <span class="section-badge">Our Services</span>
-                <h2 class="section-title">Business Services</h2>
+                <h2 class="section-title">Financial Services & Education</h2>
                 <p class="section-subtitle" style="color: rgba(253, 246, 236, 0.8);">
-                    Comprehensive financial solutions tailored to your needs
+                    Practical financial support and education for businesses, individuals, families, and communities.
                 </p>
             </div>
             <div class="services-grid">
@@ -1500,8 +1633,20 @@
                     <p>We deliver engaging classes, workshops, and speaking engagements for all ages—from youth to corporate teams.</p>
                     <p class="service-price">$1,200 - $3,500 per engagement</p>
                     <span class="promo-badge">🎤 Limited availability - book early!</span>
-                    <br><br>
-                    <a href="#workshops" class="service-link">View Workshops →</a>
+                    <div class="service-links">
+                        <a href="#workshops" class="service-link">View Organization Workshops →</a>
+                    </div>
+                </article>
+                <article class="service-card personal-workshops-card fade-in">
+                    <div class="service-icon personal-workshops-icon" aria-hidden="true">👥</div>
+                    <h3>Personal Money Workshops</h3>
+                    <p><strong>Learn on Your Own. Grow Together.</strong> Join a live workshop to strengthen your money habits, bring a friend, or host a private session for your group.</p>
+                    <p class="service-price">Starting at $65 per person</p>
+                    <span class="promo-badge">Individual seats and private group sessions available</span>
+                    <div class="service-links">
+                        <a href="https://tidycal.com/yourfinancialhub2/personal-money-workshops" target="_blank" rel="noopener noreferrer" class="service-link">Find a Workshop →</a>
+                        <a href="https://tidycal.com/yourfinancialhub2/host-a-workshop-for-your-group" target="_blank" rel="noopener noreferrer" class="service-link">Host Your Group →</a>
+                    </div>
                 </article>
             </div>
             <div style="text-align: center; margin-top: 3rem;">
@@ -1574,9 +1719,21 @@
                 <span class="section-badge" style="background: rgba(186, 159, 82, 0.2); color: var(--primary-gold);">Education Programs</span>
                 <h2 class="section-title">Workshops & Training</h2>
                 <p class="section-subtitle" style="color: rgba(253, 246, 236, 0.8);">
-                    We partner with schools, government agencies, and corporate teams to deliver scalable, culturally relevant financial education.
+                    Choose a live Personal Money Workshop for yourself, or bring financial education to your organization, school, or community.
                 </p>
             </div>
+            <article class="personal-workshops-panel fade-in" id="personal-workshops">
+                <p class="personal-workshops-eyebrow">Personal Money Workshops</p>
+                <h3>Learn on Your Own. Grow Together.</h3>
+                <p class="personal-workshops-tagline">Practical money tools for real-life goals.</p>
+                <p>Come on your own, bring a friend, or organize a private workshop for your family, team, or community group. Explore actionable topics such as budgeting, credit, debt, saving, investing, and building wealth with intention.</p>
+                <p class="personal-workshops-price">Starting at $65 per person</p>
+                <p><em>Private group pricing and customized topics are available upon request.</em></p>
+                <div class="personal-workshops-actions">
+                    <a href="https://tidycal.com/yourfinancialhub2/personal-money-workshops" target="_blank" rel="noopener noreferrer" class="btn btn-money-green">Find an Upcoming Workshop →</a>
+                    <a href="https://tidycal.com/yourfinancialhub2/host-a-workshop-for-your-group" target="_blank" rel="noopener noreferrer" class="btn btn-cream-outline">Host a Workshop for Your Group →</a>
+                </div>
+            </article>
             <div class="workshop-grid">
                 <article class="workshop-card fade-in">
                     <div class="workshop-number">01</div>
@@ -1635,7 +1792,7 @@
             </div>
             <div style="text-align: center; margin-top: 3rem;">
                 <p style="margin-bottom: 1.5rem; color: rgba(253, 246, 236, 0.8);">
-                    <strong>Who We Serve:</strong> Schools & Districts • Government Agencies • Community Organizations • Corporate Teams
+                    <strong>Organization Workshops:</strong> Schools & Districts • Government Agencies • Community Organizations • Corporate Teams
                 </p>
                 <a href="https://tidycal.com/yourfinancialhub2/speaking-engagement-inquiry" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Workshop →</a>
             </div>
@@ -1698,6 +1855,10 @@
                 <p>
                     Through the #IInve$t movement, YFH LLC is closing the wealth gap in Baltimore by starting at the foundation—financial literacy for women, youth, and entrepreneurs. We're not just teaching budgeting. We're equipping the next generation with the tools to break cycles of poverty and build legacy wealth.
                 </p>
+                <div class="iinvest-actions">
+                    <a href="https://form.jotform.com/262236455112147" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Join the #IInvest Movement →</a>
+                </div>
+                <p style="color: #555; max-width: 650px; margin: 0 auto;">Connect with the Your Financial Hub community, receive financial-empowerment updates, and take your next step toward building wealth with intention.</p>
                 <div class="iinvest-pillars">
                     <article class="pillar">
                         <div class="pillar-emoji" aria-hidden="true">✨</div>
@@ -1780,7 +1941,7 @@
                         <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Workshop pricing ranges from $1,200-$1,800 per 90-minute session, depending on the topic and format. We offer both virtual and in-person options. Custom packages are available for schools, organizations, and corporate teams. Contact us for group rates and multi-session discounts.</p>
+                        <p>Personal Money Workshops start at $65 per person. Organization workshops range from $1,200-$1,800 per 90-minute session, depending on the topic and format. We offer virtual and in-person options, along with custom packages for schools, organizations, and corporate teams.</p>
                     </div>
                 </article>
                 <article class="faq-item">
@@ -1790,6 +1951,15 @@
                     </button>
                     <div class="faq-answer">
                         <p>We work with both! While we provide business accounting and bookkeeping services, we also offer individual tax preparation, financial education workshops, and personal financial consulting to help individuals and families build wealth.</p>
+                    </div>
+                </article>
+                <article class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I host a Personal Money Workshop for my group?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Bring together your friends, family, organization, or community group for a private workshop. Topics, format, and scheduling can be tailored to your group’s goals. Use the Host a Workshop for Your Group link to begin planning your session.</p>
                     </div>
                 </article>
                 <article class="faq-item">
@@ -1807,7 +1977,7 @@
                         <span class="faq-icon" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>You can schedule a free consultation by clicking the "Schedule Consultation" button on our website, calling us at (443) 353-9366, or emailing hello@yfhllc.com. We'll discuss your needs and recommend the best services for your situation.</p>
+                        <p>You can schedule a free consultation by clicking the "Schedule Consultation" button on our website, calling us at (443) 353-9366, or emailing info@yfhllc.com. We'll discuss your needs and recommend the best services for your situation.</p>
                     </div>
                 </article>
                 <article class="faq-item">
@@ -1842,7 +2012,7 @@
                             <div class="contact-icon" aria-hidden="true">📧</div>
                             <div>
                                 <h4>Email Address</h4>
-                                <a href="mailto:hello@yfhllc.com">hello@yfhllc.com</a><br>
+                                <a href="mailto:info@yfhllc.com">info@yfhllc.com</a><br>
                                 <a href="mailto:bookings@yfhllc.com">bookings@yfhllc.com</a>
                             </div>
                         </div>
@@ -1883,6 +2053,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#personal-workshops">Personal Workshops</a></li>
                     <li><a href="#workshops">Workshops</a></li>
                     <li><a href="#speaking">Speaking</a></li>
                 </ul>
@@ -1893,7 +2064,8 @@
                     <li><a href="#services">Accounting</a></li>
                     <li><a href="#services">Tax Services</a></li>
                     <li><a href="#services">Bookkeeping</a></li>
-                    <li><a href="#workshops">Workshops</a></li>
+                    <li><a href="#personal-workshops">Personal Money Workshops</a></li>
+                    <li><a href="#workshops">Organization Workshops</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -1901,6 +2073,8 @@
                 <ul>
                     <li><a href="#contact">Contact Us</a></li>
                     <li><a href="https://tidycal.com/yourfinancialhub2" target="_blank" rel="noopener noreferrer">Book Consultation</a></li>
+                    <li><a href="https://tidycal.com/yourfinancialhub2/personal-money-workshops" target="_blank" rel="noopener noreferrer">Find a Personal Workshop</a></li>
+                    <li><a href="https://tidycal.com/yourfinancialhub2/host-a-workshop-for-your-group" target="_blank" rel="noopener noreferrer">Host a Group Workshop</a></li>
                     <li><a href="https://tidycal.com/yourfinancialhub2/speaking-engagement-inquiry" target="_blank" rel="noopener noreferrer">Book Speaking</a></li>
                     <li><a href="https://www.yfhllc.com" target="_blank" rel="noopener noreferrer">Visit Website</a></li>
                 </ul>
