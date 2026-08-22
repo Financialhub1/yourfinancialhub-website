@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Your Financial Hub white wordmark with gold emblem</title>
+  <desc id="desc">Transparent horizontal logo for use on a dark green website header.</desc>
+  <g fill="none" stroke="#D4AF37" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="175" cy="180" r="126" stroke="#B58A2A" stroke-width="3"/>
+    <path d="M80 130 C103 66 184 42 248 71 C286 88 311 117 321 151" stroke="#D4AF37" stroke-width="18"/>
+    <path d="M79 230 C100 294 169 326 235 303 C274 290 305 263 320 226" stroke="#D4AF37" stroke-width="18"/>
+    <path d="M85 123 C105 77 157 53 210 58" stroke="#B58A2A" stroke-width="3"/>
+    <path d="M85 237 C104 277 145 300 190 304" stroke="#B58A2A" stroke-width="3"/>
+  </g>
+  <text x="355" y="190" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="86" letter-spacing="-3">Your Financial</text>
+  <text x="930" y="195" fill="#FFFFFF" font-family="'Brush Script MT', 'Segoe Script', cursive" font-size="92" font-style="italic">Hub</text>
+</svg>
